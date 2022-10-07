@@ -1,3 +1,5 @@
+$header-height: 196px;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,16 +7,18 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 196px;
+  height: $header-height;
+  width: 100%;
   .logo {
     position: absolute;
     left: 0;
@@ -22,7 +26,6 @@ header {
     padding: 3rem;
   }
   .navbar {
-    font-family: Arial, Helvetica, sans-serif;
     ul {
       display: inline-flex;
       gap: 4rem;
@@ -31,13 +34,12 @@ header {
       list-style-type: none;
 
       a {
-        text-decoration: none;
         color: inherit;
-        text-decoration: underline 0.15em rgba($color: #ffffff, $alpha: 0);
+        text-decoration: underline 0.15em rgba($color: black, $alpha: 0);
         transition: text-decoration-color 300ms;
 
         &:hover {
-          text-decoration-color: rgba($color: #ffffff, $alpha: 1);
+          text-decoration-color: rgba($color: black, $alpha: 1);
         }
       }
     }
@@ -46,6 +48,10 @@ header {
   .socials {
     position: absolute;
     right: 1.25rem;
+
+    a {
+      text-decoration: none;
+    }
 
     .social-btn {
       transition: 0.4s ease;
@@ -57,5 +63,20 @@ header {
 
   .github-logo {
     border-radius: 100%;
+  }
+}
+
+.intro-section {
+  display: flex;
+  margin-inline: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  gap: 3rem;
+
+  .my-face {
+    width: 300px;
+    border-radius: 20px;
   }
 }

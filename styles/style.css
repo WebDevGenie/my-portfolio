@@ -5,24 +5,24 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 196px;
+  width: 100%;
 }
 header .logo {
   position: absolute;
   left: 0;
   top: 0;
   padding: 3rem;
-}
-header .navbar {
-  font-family: Arial, Helvetica, sans-serif;
 }
 header .navbar ul {
   display: inline-flex;
@@ -32,21 +32,23 @@ header .navbar li {
   list-style-type: none;
 }
 header .navbar li a {
-  text-decoration: none;
   color: inherit;
-  -webkit-text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-          text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  -webkit-text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+          text-decoration: underline 0.15em rgba(0, 0, 0, 0);
   transition: -webkit-text-decoration-color 300ms;
   transition: text-decoration-color 300ms;
   transition: text-decoration-color 300ms, -webkit-text-decoration-color 300ms;
 }
 header .navbar li a:hover {
-  -webkit-text-decoration-color: white;
-          text-decoration-color: white;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
 }
 header .socials {
   position: absolute;
   right: 1.25rem;
+}
+header .socials a {
+  text-decoration: none;
 }
 header .socials .social-btn {
   transition: 0.4s ease;
@@ -56,4 +58,17 @@ header .socials .social-btn:hover {
 }
 header .github-logo {
   border-radius: 100%;
+}
+
+.intro-section {
+  display: flex;
+  margin-inline: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 3rem;
+}
+.intro-section .my-face {
+  width: 300px;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
