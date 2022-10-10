@@ -19,6 +19,7 @@ header {
   align-items: center;
   height: $header-height;
   width: 100%;
+  font-weight: 600;
   .logo {
     position: absolute;
     left: 0;
@@ -78,5 +79,37 @@ header {
   .my-face {
     width: 300px;
     border-radius: 20px;
+  }
+}
+
+.fade-in-text {
+  font-family: Arial;
+  font-size: 4rem;
+  animation: fadeIn 3s;
+}
+.fade-in-text2 {
+  font-family: Arial;
+  font-size: 4rem;
+  animation: fadeIn2 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
