@@ -90,18 +90,20 @@ header .github-logo {
 
 @-webkit-keyframes fadeIn {
   0% {
+    transform: translateX(-50px);
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
   0% {
+    transform: translateX(-50px);
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
   }
 }
@@ -110,6 +112,7 @@ header .github-logo {
     opacity: 0;
   }
   50% {
+    transform: translate(-50px);
     opacity: 0;
   }
   100% {
@@ -121,6 +124,7 @@ header .github-logo {
     opacity: 0;
   }
   50% {
+    transform: translate(-50px);
     opacity: 0;
   }
   100% {
