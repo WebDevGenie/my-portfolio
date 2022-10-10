@@ -67,6 +67,8 @@ header .github-logo {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: Arial;
+  font-size: 4rem;
   gap: 3rem;
 }
 .intro-section .my-face {
@@ -75,15 +77,11 @@ header .github-logo {
 }
 
 .fade-in-text {
-  font-family: Arial;
-  font-size: 4rem;
   -webkit-animation: fadeIn 3s;
           animation: fadeIn 3s;
 }
 
 .fade-in-text2 {
-  font-family: Arial;
-  font-size: 4rem;
   -webkit-animation: fadeIn2 3s;
           animation: fadeIn2 3s;
 }
@@ -111,7 +109,7 @@ header .github-logo {
   0% {
     opacity: 0;
   }
-  50% {
+  25% {
     transform: translate(-50px);
     opacity: 0;
   }
@@ -123,7 +121,7 @@ header .github-logo {
   0% {
     opacity: 0;
   }
-  50% {
+  25% {
     transform: translate(-50px);
     opacity: 0;
   }

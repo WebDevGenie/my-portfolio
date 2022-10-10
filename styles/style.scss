@@ -74,6 +74,9 @@ header {
   align-items: center;
   height: 100vh;
 
+  font-family: Arial;
+  font-size: 4rem;
+
   gap: 3rem;
 
   .my-face {
@@ -83,13 +86,9 @@ header {
 }
 
 .fade-in-text {
-  font-family: Arial;
-  font-size: 4rem;
   animation: fadeIn 3s;
 }
 .fade-in-text2 {
-  font-family: Arial;
-  font-size: 4rem;
   animation: fadeIn2 3s;
 }
 
@@ -107,7 +106,7 @@ header {
   0% {
     opacity: 0;
   }
-  50% {
+  25% {
     transform: translate(-50px);
     opacity: 0;
   }
