@@ -19,7 +19,7 @@ header {
   align-items: center;
   height: $header-height;
   width: 100%;
-  font-weight: 600;
+
   .logo {
     position: absolute;
     left: 0;
@@ -36,7 +36,7 @@ header {
 
       a {
         color: inherit;
-        text-decoration: underline 0.15em rgba($color: black, $alpha: 0);
+        text-decoration: underline 0.1em rgba($color: black, $alpha: 0);
         transition: text-decoration-color 300ms;
 
         &:hover {
@@ -67,22 +67,14 @@ header {
   }
 }
 
-.intro-section {
+#intro-section {
   display: flex;
   margin-inline: auto;
   justify-content: center;
   align-items: center;
   height: 100vh;
 
-  font-family: Arial;
   font-size: 4rem;
-
-  gap: 3rem;
-
-  .my-face {
-    width: 300px;
-    border-radius: 20px;
-  }
 }
 
 .fade-in-text {
@@ -113,4 +105,10 @@ header {
   100% {
     opacity: 1;
   }
+}
+
+#projects-section {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
 }
