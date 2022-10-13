@@ -108,7 +108,28 @@ header {
 }
 
 #projects-section {
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
   height: 100vh;
+  font-size: 4rem;
+
+  h1 {
+    margin-bottom: 4rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .projects {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    .project {
+      border: solid 2px;
+      .project-img {
+        width: 300px;
+      }
+    }
+  }
 }
