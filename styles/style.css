@@ -144,4 +144,13 @@ header .github-logo {
 }
 #projects-section .projects .project .project-img {
   width: 300px;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
