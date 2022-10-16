@@ -1,13 +1,19 @@
-const observer = new IntersectionObserver((entries) => {
+const projects = document.querySelector(".projects-section");
+
+const callback = (entries, observer) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     } else {
       entry.target.classList.remove("show");
     }
   });
-});
+};
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.1,
+};
 
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => observer.observe(el));
+const myObserver = new IntersectionObserver(callback, options);
+myObserver.observe(projects);

@@ -67,6 +67,7 @@ header .github-logo {
   align-items: center;
   height: 100vh;
   font-size: 4rem;
+  margin-bottom: 20vh;
 }
 
 .fade-in-text {
@@ -122,35 +123,42 @@ header .github-logo {
     opacity: 1;
   }
 }
-#projects-section {
+.projects-section {
   display: block;
   text-align: center;
   height: 100vh;
-  font-size: 4rem;
+  font-size: 3rem;
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(60px);
 }
-#projects-section h1 {
+.projects-section h1 {
   margin-bottom: 4rem;
 }
-#projects-section p {
+.projects-section p {
   font-size: 2rem;
 }
-#projects-section .projects {
+.projects-section .projects {
   display: flex;
   justify-content: center;
   gap: 24px;
+  flex-wrap: wrap;
 }
-#projects-section .projects .project {
-  border: solid 2px;
+.projects-section .projects .project {
+  border: solid 1px;
 }
-#projects-section .projects .project .project-img {
+.projects-section .projects .project .project-title {
+  font-size: 2rem;
+}
+.projects-section .projects .project .project-img {
   width: 300px;
 }
 
-.hidden {
-  opacity: 0;
-  transition: all 1s;
+.section-title {
+  margin-bottom: 48px;
 }
 
 .show {
+  transform: translateY(-60px);
   opacity: 1;
 }/*# sourceMappingURL=style.css.map */
