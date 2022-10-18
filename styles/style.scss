@@ -1,4 +1,4 @@
-$header-height: 196px;
+@import "./variables";
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@ $header-height: 196px;
 body {
   background-color: white;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $primary-font;
 }
 
 header {
@@ -75,7 +75,7 @@ header {
   height: 100vh;
 
   font-size: 4rem;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 }
 
 .fade-in-text {
@@ -113,11 +113,9 @@ header {
   text-align: center;
   height: 100vh;
   font-size: 3rem;
-
   opacity: 0;
   transition: all 1s;
   transform: translateY(60px);
-
   h1 {
     margin-bottom: 4rem;
   }
@@ -130,15 +128,15 @@ header {
     display: flex;
     justify-content: center;
     gap: 24px;
-    flex-wrap: wrap;
     .project {
       border: solid 1px;
+      padding: 10px;
 
       .project-title {
         font-size: 2rem;
       }
       .project-img {
-        width: 300px;
+        height: 200px;
       }
     }
   }

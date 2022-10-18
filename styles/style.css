@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +11,7 @@
 body {
   background-color: white;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat;
 }
 
 header {
@@ -67,7 +71,7 @@ header .github-logo {
   align-items: center;
   height: 100vh;
   font-size: 4rem;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 }
 
 .fade-in-text {
@@ -142,16 +146,16 @@ header .github-logo {
   display: flex;
   justify-content: center;
   gap: 24px;
-  flex-wrap: wrap;
 }
 .projects-section .projects .project {
   border: solid 1px;
+  padding: 10px;
 }
 .projects-section .projects .project .project-title {
   font-size: 2rem;
 }
 .projects-section .projects .project .project-img {
-  width: 300px;
+  height: 200px;
 }
 
 .section-title {
