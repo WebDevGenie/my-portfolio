@@ -1,4 +1,4 @@
-const projects = document.querySelector(".projects-section");
+const hiddenList = document.querySelectorAll(".hidden");
 
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
@@ -16,4 +16,7 @@ const options = {
 };
 
 const myObserver = new IntersectionObserver(callback, options);
-myObserver.observe(projects);
+
+hiddenList.forEach((hidden) => {
+  myObserver.observe(hidden);
+});

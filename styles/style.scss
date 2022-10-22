@@ -108,14 +108,23 @@ header {
   }
 }
 
+.about-section {
+  height: 100vh;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+.hide {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(60px);
+}
+
 .projects-section {
   display: block;
   text-align: center;
   height: 100vh;
-  font-size: 3rem;
-  opacity: 0;
-  transition: all 1s;
-  transform: translateY(60px);
+
   h1 {
     margin-bottom: 4rem;
   }
@@ -143,6 +152,7 @@ header {
 }
 
 .section-title {
+  font-size: 3rem;
   margin-bottom: 48px;
 }
 
