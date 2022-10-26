@@ -13,6 +13,10 @@ body {
   color: black;
   font-family: Montserrat;
 }
+body h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
 
 header {
   position: absolute;
@@ -64,7 +68,7 @@ header .github-logo {
   border-radius: 100%;
 }
 
-#intro-section {
+.intro-section {
   display: flex;
   margin-inline: auto;
   justify-content: center;
@@ -130,11 +134,15 @@ header .github-logo {
 .about-section {
   height: 100vh;
   opacity: 0;
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
+}
+.about-section p {
+  max-width: 700px;
+  margin-inline: auto;
 }
 
-.hide {
+.hidden {
   opacity: 0;
   transition: all 1s;
   transform: translateY(60px);

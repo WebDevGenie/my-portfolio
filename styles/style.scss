@@ -10,6 +10,11 @@ body {
   background-color: white;
   color: black;
   font-family: $primary-font;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
 }
 
 header {
@@ -67,7 +72,7 @@ header {
   }
 }
 
-#intro-section {
+.intro-section {
   display: flex;
   margin-inline: auto;
   justify-content: center;
@@ -111,10 +116,15 @@ header {
 .about-section {
   height: 100vh;
   opacity: 0;
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
+
+  p {
+    max-width: 700px;
+    margin-inline: auto;
+  }
 }
-.hide {
+.hidden {
   opacity: 0;
   transition: all 1s;
   transform: translateY(60px);
