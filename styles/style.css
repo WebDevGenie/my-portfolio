@@ -75,7 +75,7 @@ header .github-logo {
   align-items: center;
   height: 100vh;
   font-size: 4rem;
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
 }
 
 .fade-in-text {
@@ -132,7 +132,7 @@ header .github-logo {
   }
 }
 .about-section {
-  height: 100vh;
+  height: 80vh;
   opacity: 0;
   display: block;
   text-align: center;
@@ -162,17 +162,24 @@ header .github-logo {
 .projects-section .projects {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .projects-section .projects .project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border: solid 1px;
   padding: 10px;
+  align-items: center;
+  width: 300px;
 }
 .projects-section .projects .project .project-title {
   font-size: 2rem;
+  align-self: flex-end;
 }
 .projects-section .projects .project .project-img {
-  height: 200px;
+  width: 300px;
 }
 
 .section-title {

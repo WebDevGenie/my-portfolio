@@ -80,7 +80,7 @@ header {
   height: 100vh;
 
   font-size: 4rem;
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
 }
 
 .fade-in-text {
@@ -114,7 +114,7 @@ header {
 }
 
 .about-section {
-  height: 100vh;
+  height: 80vh;
   opacity: 0;
   display: block;
   text-align: center;
@@ -146,16 +146,23 @@ header {
   .projects {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
     .project {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       border: solid 1px;
       padding: 10px;
+      align-items: center;
+      width: 300px;
 
       .project-title {
         font-size: 2rem;
+        align-self: flex-end;
       }
       .project-img {
-        height: 200px;
+        width: 300px;
       }
     }
   }
