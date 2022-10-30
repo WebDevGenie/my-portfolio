@@ -126,14 +126,15 @@ header {
 }
 .hidden {
   opacity: 0;
-  transition: all 1s;
+  transition: 1s ease-in;
   transform: translateY(60px);
 }
 
 .projects-section {
   display: block;
   text-align: center;
-  height: 100vh;
+  height: max-content;
+  margin-bottom: 150px;
 
   h1 {
     margin-bottom: 4rem;
@@ -155,9 +156,9 @@ header {
       border: solid 1px;
       border-radius: 10px;
 
-      align-items: center;
+      align-items: flex-start;
       width: 300px;
-      min-height: fit-content;
+      height: auto;
       position: relative;
       .project-title {
         font-size: 2rem;
