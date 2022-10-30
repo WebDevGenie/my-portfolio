@@ -170,16 +170,51 @@ header .github-logo {
   flex-wrap: wrap;
   justify-content: center;
   border: solid 1px;
-  padding: 10px;
+  border-radius: 10px;
+  padding-bottom: 5px;
   align-items: center;
   width: 300px;
 }
 .projects-section .projects .project .project-title {
   font-size: 2rem;
+  align-self: flex-start;
+  background-color: black;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+.projects-section .projects .project .project-title a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.projects-section .projects .project .project-title a:hover {
+  background-color: black;
+  color: white;
+}
+.projects-section .projects .project .links {
+  display: flex;
   align-self: flex-end;
+  gap: 10px;
+}
+.projects-section .projects .project .links a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  transition: 0.4s ease;
+  border-radius: 10px;
+  background-color: black;
+  align-self: flex-end;
+}
+.projects-section .projects .project .links a:hover {
+  transform: translateY(-3px);
 }
 .projects-section .projects .project .project-img {
   width: 300px;
+  margin-bottom: 10px;
 }
 
 .section-title {

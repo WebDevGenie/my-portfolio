@@ -153,16 +153,54 @@ header {
       flex-wrap: wrap;
       justify-content: center;
       border: solid 1px;
-      padding: 10px;
+      border-radius: 10px;
+      padding-bottom: 5px;
       align-items: center;
       width: 300px;
-
       .project-title {
         font-size: 2rem;
+        align-self: flex-start;
+        background-color: black;
+        color: white;
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        a {
+          text-decoration: none;
+          color: black;
+          transition: 0.3s ease;
+          padding: 10px;
+          margin: 10px;
+          border-radius: 10px;
+
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+
+      .links {
+        display: flex;
         align-self: flex-end;
+        gap: 10px;
+
+        a {
+          text-decoration: none;
+          color: white;
+          padding: 5px;
+          transition: 0.4s ease;
+          border-radius: 10px;
+          background-color: black;
+          align-self: flex-end;
+
+          &:hover {
+            transform: translateY(-3px);
+          }
+        }
       }
       .project-img {
         width: 300px;
+        margin-bottom: 10px;
       }
     }
   }
