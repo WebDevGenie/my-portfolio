@@ -171,9 +171,12 @@ header .github-logo {
   justify-content: center;
   border: solid 1px;
   border-radius: 10px;
-  padding-bottom: 5px;
   align-items: center;
   width: 300px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  position: relative;
 }
 .projects-section .projects .project .project-title {
   font-size: 2rem;
@@ -197,7 +200,11 @@ header .github-logo {
 }
 .projects-section .projects .project .links {
   display: flex;
-  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3px;
+  justify-content: center;
+  width: 100%;
   gap: 10px;
 }
 .projects-section .projects .project .links a {
@@ -214,7 +221,7 @@ header .github-logo {
 }
 .projects-section .projects .project .project-img {
   width: 300px;
-  margin-bottom: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .section-title {
