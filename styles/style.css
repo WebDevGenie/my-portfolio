@@ -132,7 +132,7 @@ header .github-logo {
   }
 }
 .about-section {
-  height: 80vh;
+  height: 60vh;
   opacity: 0;
   display: block;
   text-align: center;
@@ -151,9 +151,7 @@ header .github-logo {
 .projects-section {
   display: block;
   text-align: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 50vh;
   margin-bottom: 150px;
 }
 .projects-section h1 {
