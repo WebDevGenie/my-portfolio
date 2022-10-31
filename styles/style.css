@@ -34,22 +34,19 @@ header .logo {
 }
 header .navbar ul {
   display: inline-flex;
-  gap: 4rem;
+  gap: 24px;
 }
 header .navbar li {
   list-style-type: none;
 }
 header .navbar li a {
   color: inherit;
-  -webkit-text-decoration: underline 0.1em rgba(0, 0, 0, 0);
-          text-decoration: underline 0.1em rgba(0, 0, 0, 0);
-  transition: -webkit-text-decoration-color 300ms;
-  transition: text-decoration-color 300ms;
-  transition: text-decoration-color 300ms, -webkit-text-decoration-color 300ms;
+  text-decoration: none;
+  transition: 300ms;
+  padding: 10px;
 }
 header .navbar li a:hover {
-  -webkit-text-decoration-color: black;
-          text-decoration-color: black;
+  color: rgba(0, 0, 0, 0.5);
 }
 header .socials {
   position: absolute;
@@ -132,7 +129,7 @@ header .github-logo {
   }
 }
 .about-section {
-  height: 60vh;
+  height: 80vh;
   opacity: 0;
   display: block;
   text-align: center;
@@ -151,7 +148,7 @@ header .github-logo {
 .projects-section {
   display: block;
   text-align: center;
-  height: 50vh;
+  height: 60vh;
   margin-bottom: 150px;
 }
 .projects-section h1 {
@@ -221,6 +218,10 @@ header .github-logo {
 .projects-section .projects .project .project-img {
   width: 300px;
   border-radius: 0px 0px 10px 10px;
+}
+
+.resume-section {
+  text-align: center;
 }
 
 .section-title {
