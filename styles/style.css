@@ -143,7 +143,12 @@ header .github-logo {
 .hidden {
   opacity: 0;
   transition: 1s ease-in;
-  transform: translateY(60px);
+  transform: translateY(20px);
+}
+
+.show {
+  transform: translateY(-20px);
+  opacity: 1;
 }
 
 .projects-section {
@@ -228,9 +233,4 @@ header .github-logo {
 .section-title {
   font-size: 3rem;
   margin-bottom: 48px;
-}
-
-.show {
-  transform: translateY(-60px);
-  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

@@ -129,7 +129,12 @@ header {
 .hidden {
   opacity: 0;
   transition: 1s ease-in;
-  transform: translateY(60px);
+  transform: translateY(20px);
+}
+
+.show {
+  transform: translateY(-20px);
+  opacity: 1;
 }
 
 .projects-section {
@@ -223,9 +228,4 @@ header {
 .section-title {
   font-size: 3rem;
   margin-bottom: 48px;
-}
-
-.show {
-  transform: translateY(-60px);
-  opacity: 1;
 }
