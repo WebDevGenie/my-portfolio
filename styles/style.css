@@ -130,20 +130,13 @@ header .github-logo {
   }
 }
 .about-section {
-  height: 80vh;
-  opacity: 0;
+  height: 60vh;
   display: block;
   text-align: center;
 }
 .about-section p {
   max-width: 700px;
   margin-inline: auto;
-}
-
-.hidden {
-  opacity: 0;
-  transition: 1s ease-in;
-  transform: translateY(20px);
 }
 
 .show {
@@ -154,7 +147,7 @@ header .github-logo {
 .projects-section {
   display: block;
   text-align: center;
-  height: 60vh;
+  height: 100%;
   margin-bottom: 150px;
 }
 .projects-section h1 {

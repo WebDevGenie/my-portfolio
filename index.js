@@ -1,22 +1,12 @@
-const hiddenList = document.querySelectorAll(".hidden");
-
-const callback = (entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
-    }
-  });
-};
-const options = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.1,
-};
-
-const myObserver = new IntersectionObserver(callback, options);
-
-hiddenList.forEach((hidden) => {
-  myObserver.observe(hidden);
+// Scroll Reveal Animation
+window.sr = ScrollReveal({
+  origin: "bottom",
+  distance: "80px",
+  duration: 2000,
+  reset: true,
 });
+
+sr.reveal(".about-section");
+sr.reveal(".projects-section");
+sr.reveal(".project");
+sr.reveal(".resume-section");
