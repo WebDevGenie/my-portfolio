@@ -6,7 +6,7 @@ window.sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(".about-section");
+sr.reveal(".reveal");
 sr.reveal(".projects-section");
 sr.reveal(".project");
 sr.reveal(".resume-section");

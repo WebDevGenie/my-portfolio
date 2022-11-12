@@ -82,7 +82,13 @@ header {
   height: 100vh;
 
   font-size: 4rem;
-  margin-bottom: 20vh;
+}
+
+// Mobile Responsiveness
+@media screen and (max-width: 700px) {
+  .intro-section {
+    font-size: 2rem;
+  }
 }
 
 .fade-in-text {
@@ -123,6 +129,31 @@ header {
   p {
     max-width: 700px;
     margin-inline: auto;
+  }
+
+  .about-jcu {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    img {
+      align-self: flex-start;
+    }
+
+    p {
+      max-width: 300px;
+      width: 300px;
+    }
+  }
+}
+
+.skills-section {
+  text-align: center;
+  height: 60vh;
+  .section-title {
   }
 }
 

@@ -73,9 +73,13 @@ header .github-logo {
   align-items: center;
   height: 100vh;
   font-size: 4rem;
-  margin-bottom: 20vh;
 }
 
+@media screen and (max-width: 700px) {
+  .intro-section {
+    font-size: 2rem;
+  }
+}
 .fade-in-text {
   -webkit-animation: fadeIn 3s;
           animation: fadeIn 3s;
@@ -138,7 +142,26 @@ header .github-logo {
   max-width: 700px;
   margin-inline: auto;
 }
+.about-section .about-jcu {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.about-section .about-jcu img {
+  align-self: flex-start;
+}
+.about-section .about-jcu p {
+  max-width: 300px;
+  width: 300px;
+}
 
+.skills-section {
+  text-align: center;
+  height: 60vh;
+}
 .show {
   transform: translateY(-20px);
   opacity: 1;
