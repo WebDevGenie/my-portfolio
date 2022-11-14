@@ -11,15 +11,17 @@ body {
   background-color: white;
   color: black;
   font-family: $primary-font;
+  color: rgb(87, 87, 87);
 
   h2 {
     font-size: 3rem;
     font-weight: 600;
+    color: #000000;
   }
 }
 
 header {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +49,8 @@ header {
         padding: 10px;
 
         &:hover {
-          color: rgba($color: #000000, $alpha: 0.5);
+          color: rgba($color: $secondary-color, $alpha: 1);
+          font-weight: 600;
         }
       }
     }
@@ -74,14 +77,39 @@ header {
   }
 }
 
+.header.scrolled {
+  background-color: #000000 !important;
+  transition: background-color 200ms linear;
+}
+
+// Intro section
 .intro-section {
   display: flex;
   margin-inline: auto;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  text-align: center;
 
   font-size: 4rem;
+
+  .intro-text {
+    h1 {
+      color: #000000;
+    }
+    .grey {
+      color: rgb(87, 87, 87);
+    }
+  }
+
+  // CTA Button
+  .cta-btn {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    background: $secondary-color;
+    padding: 10px;
+  }
 }
 
 // Mobile Responsiveness
@@ -91,6 +119,7 @@ header {
   }
 }
 
+// Animation for fade in texts
 .fade-in-text {
   animation: fadeIn 3s;
 }
@@ -193,7 +222,7 @@ header {
       height: auto;
       position: relative;
       .project-title {
-        font-size: 2rem;
+        font-size: 1.5em;
         align-self: flex-start;
         background-color: black;
         color: white;
