@@ -91,11 +91,20 @@ header .github-logo {
   color: rgb(87, 87, 87);
 }
 .intro-section .cta-btn {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
   font-size: 2rem;
   text-decoration: none;
   color: white;
   background: #3d006e;
   padding: 10px;
+  transition: 0.4s;
+}
+.intro-section .cta-btn:hover {
+  transform: translateX(5px);
 }
 
 @media screen and (max-width: 700px) {
@@ -198,7 +207,7 @@ header .github-logo {
 .projects-section {
   display: block;
   text-align: center;
-  height: 100%;
+  height: 80vh;
   margin-bottom: 150px;
 }
 .projects-section h1 {
