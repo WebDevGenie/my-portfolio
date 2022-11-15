@@ -9,19 +9,17 @@
 
 body {
   background-color: white;
-  color: black;
   font-family: $primary-font;
   color: rgb(87, 87, 87);
 
   h2 {
     font-size: 3rem;
     font-weight: 600;
-    color: #000000;
+    color: $primary-color;
   }
 }
 
 header {
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,10 +86,14 @@ header {
   margin-inline: auto;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   text-align: center;
 
   font-size: 4rem;
+
+  margin-bottom: 20vh;
+  padding-left: 24px;
+  padding-right: 24px;
 
   .intro-text {
     h1 {
@@ -151,17 +153,15 @@ header {
 }
 
 .about-section {
-  height: 60vh;
   display: block;
   text-align: center;
-
+  margin-bottom: 100px;
   p {
     max-width: 700px;
     margin-inline: auto;
   }
 
   .about-jcu {
-    display: flex;
     justify-content: center;
     gap: 24px;
     align-items: center;
@@ -174,7 +174,6 @@ header {
 
     p {
       max-width: 300px;
-      width: 300px;
     }
   }
 }
@@ -182,7 +181,11 @@ header {
 .skills-section {
   text-align: center;
   height: 60vh;
-  .section-title {
+  p {
+    max-width: 600px;
+    margin-inline: auto;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 

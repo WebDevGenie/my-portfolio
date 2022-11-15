@@ -11,18 +11,16 @@
 
 body {
   background-color: white;
-  color: black;
   font-family: Montserrat;
   color: rgb(87, 87, 87);
 }
 body h2 {
   font-size: 3rem;
   font-weight: 600;
-  color: #000000;
+  color: #1b1c1e;
 }
 
 header {
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,9 +77,12 @@ header .github-logo {
   margin-inline: auto;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   text-align: center;
   font-size: 4rem;
+  margin-bottom: 20vh;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .intro-section .intro-text h1 {
   color: #000000;
@@ -156,16 +157,15 @@ header .github-logo {
   }
 }
 .about-section {
-  height: 60vh;
   display: block;
   text-align: center;
+  margin-bottom: 100px;
 }
 .about-section p {
   max-width: 700px;
   margin-inline: auto;
 }
 .about-section .about-jcu {
-  display: flex;
   justify-content: center;
   gap: 24px;
   align-items: center;
@@ -177,13 +177,19 @@ header .github-logo {
 }
 .about-section .about-jcu p {
   max-width: 300px;
-  width: 300px;
 }
 
 .skills-section {
   text-align: center;
   height: 60vh;
 }
+.skills-section p {
+  max-width: 600px;
+  margin-inline: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .show {
   transform: translateY(-20px);
   opacity: 1;
