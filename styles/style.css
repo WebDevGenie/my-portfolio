@@ -92,7 +92,6 @@ header .github-logo {
 }
 .intro-section .cta-btn {
   display: block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
@@ -102,6 +101,7 @@ header .github-logo {
   background: #3d006e;
   padding: 10px;
   transition: 0.4s;
+  border-radius: 10px;
 }
 .intro-section .cta-btn:hover {
   transform: translateX(5px);
@@ -113,23 +113,11 @@ header .github-logo {
   }
 }
 .fade-in-text {
-  -webkit-animation: fadeIn 3s;
-          animation: fadeIn 3s;
+  animation: fadeIn 3s;
 }
 
 .fade-in-text2 {
-  -webkit-animation: fadeIn2 3s;
-          animation: fadeIn2 3s;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
+  animation: fadeIn2 3s;
 }
 
 @keyframes fadeIn {
@@ -138,18 +126,6 @@ header .github-logo {
     opacity: 0;
   }
   50% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn2 {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    transform: translate(-50px);
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
 }
